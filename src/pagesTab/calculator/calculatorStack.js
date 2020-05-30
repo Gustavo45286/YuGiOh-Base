@@ -12,7 +12,13 @@ export default function CalculatorStack(){
 
     return(
         <NavigationContainer independent={true}>
-            <Stack.Navigator >
+            <Stack.Navigator
+                screenOptions={{
+                    headerTintColor: 'white',
+                    headerTransparent: true,
+                    title:''
+                }}
+            >
                 <Stack.Screen name="Life Points" component={LifePoints}></Stack.Screen>
                 <Stack.Screen name="Coin" component={Coin}></Stack.Screen>
                 <Stack.Screen name="Dice" component={Dice}></Stack.Screen>

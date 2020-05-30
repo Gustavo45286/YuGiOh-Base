@@ -10,7 +10,25 @@ export default function RoutesTab(){
 
     return(
         <NavigationContainer>
-            <Tab.Navigator>
+            <Tab.Navigator
+                tabBarOptions={{
+                    activeTintColor: 'white',
+                    inactiveTintColor: 'black',
+                    backgroundColor: 'black',
+                    labelStyle: {
+                        backgroundColor:'#ce324f',
+                        fontSize: 16,
+                    
+
+                    },
+                    style:{
+                        backgroundColor: '#ce324f',    
+                    },
+                    tabStyle:{
+                        backgroundColor: '#ce324f',
+                    }
+                }}
+            >
                 <Tab.Screen name="Database" component={DatabaseStack}/>
                 <Tab.Screen name="Calculadora" component={CalculatorStack}/>
             </Tab.Navigator>

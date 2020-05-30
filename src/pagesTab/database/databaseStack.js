@@ -9,8 +9,14 @@ export default function DatabaseStack(){
     const Stack = createStackNavigator();
 
     return(
-        <NavigationContainer independent={true}>
-            <Stack.Navigator >
+        <NavigationContainer independent={true} >
+            <Stack.Navigator
+                screenOptions={{
+                    headerTintColor: '#ce324f',
+                    headerTransparent: true,
+                    title:''
+                }}
+            >
                 <Stack.Screen name="All Cards" component={AllCards}></Stack.Screen>
                 <Stack.Screen name="Details" component={Details}></Stack.Screen>
             </Stack.Navigator>
