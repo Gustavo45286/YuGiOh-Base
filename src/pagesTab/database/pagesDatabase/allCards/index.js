@@ -1,9 +1,13 @@
 import React, { useState,useEffect}  from 'react';
-import { Text, View, Button,Image,FlatList } from 'react-native';
+import { Text, View, Button,Image,FlatList,TouchableHighlight } from 'react-native';
 
 import ygoApi from '../../../../services/ygoApi'
 import { useFocusEffect } from '@react-navigation/native';
 import { set } from 'react-native-reanimated';
+
+import {Container,ListaCards,Header,Logo,Description,ButtonContainer,ButtonText,CardDetails,CardDetailsText,Botao} from './styles';
+
+import Constants from 'expo-constants';
 
 function AllCards ({navigation}) {  
 
@@ -48,23 +52,47 @@ function AllCards ({navigation}) {
     
 
     return (
-        <View style={{ flex: 1,marginTop:24 }}>
-            <FlatList
-                data={cards}
-                keyExtractor={card => String(card.name)}
-                onEndReached={() =>loadCards()}
-                onEndReachedThreshold={0.1}
-                renderItem={
-                    ({item: card}) =>(
-                        <View >
-                            <Button title={card.name} style={{fontSize: 18}}  onPress={ ()=> verDetalhes(card)}></Button>
-                        </View>
-                    )
-                }
-            />
+        <Container style={ {marginTop: Constants.statusBarHeight}}>
+            <Header>
+                <Logo>Yu-Gi-Oh!-Base!</Logo>
+                <Description>A complete database for prices and card information</Description>
+            </Header>
+            <CardDetails>
+                <CardDetailsText>
+                    Card Image                           Name                                 
+                </CardDetailsText>
+            </CardDetails>
+            <ListaCards>
+                <FlatList
+                    data={cards}
+                    keyExtractor={card => String(card.name)}
+                    onEndReached={() =>loadCards()}
+                    onEndReachedThreshold={0.1}
+                    renderItem={
+                        ({item: card}) =>(
+            
+                            <TouchableHighlight  onPress={ ()=> verDetalhes(card)} onLongPress={() => verDetalhes(card)}> 
+                                <Botao>
+                                    <ButtonContainer>
+                                        <Image style={{height: 130,width: 90}} source={{uri: card.card_images[0].image_url}}></Image>
+                                        <ButtonText>{card.name}</ButtonText>
+                                    </ButtonContainer> 
+                                </Botao>  
+                                               
+                                
+                            </TouchableHighlight>
+
+
+
+
+                        )
+                    }
+                />
+            </ListaCards>
+            
             
 
-        </View>
+        </Container>
     );
 }
 

@@ -12,20 +12,20 @@ export default function RoutesTab(){
         <NavigationContainer>
             <Tab.Navigator
                 tabBarOptions={{
-                    activeTintColor: 'white',
-                    inactiveTintColor: 'black',
+                    activeTintColor: '#ce324f',
+                    inactiveTintColor: '#ce324f8e',
                     backgroundColor: 'black',
                     labelStyle: {
-                        backgroundColor:'#ce324f',
+                        backgroundColor:'#101010',
                         fontSize: 16,
                     
 
                     },
                     style:{
-                        backgroundColor: '#ce324f',    
+                        backgroundColor: '#101010',    
                     },
                     tabStyle:{
-                        backgroundColor: '#ce324f',
+                        backgroundColor: '#101010',
                     }
                 }}
             >
