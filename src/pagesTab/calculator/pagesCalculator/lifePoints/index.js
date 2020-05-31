@@ -75,7 +75,7 @@ function LifePoints ({navigation}) {
 
                 <TouchableHighlight onPress={ () => resetLife() }>
                     <ClearLifeValue>
-                         <ClearLifeValueText>R</ClearLifeValueText>
+                         <ClearLifeValueText>c</ClearLifeValueText>
                     </ClearLifeValue>
                 </TouchableHighlight>
 
@@ -86,7 +86,7 @@ function LifePoints ({navigation}) {
                 
                 <TouchableHighlight onPress={ () => resetChange() }>
                     <ClearChangeValue>
-                         <ClearChangeValueText>C</ClearChangeValueText>
+                         <ClearChangeValueText>c</ClearChangeValueText>
                     </ClearChangeValue>
                 </TouchableHighlight>
 
@@ -190,22 +190,8 @@ function LifePoints ({navigation}) {
                 </TouchableHighlight>
 
             </ContainerCoinDice>
-
-
-            
-
             
         </Container>
-        
-            
-        
-
-        
-
-
-
-
-    
     );
 }
 
