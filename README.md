@@ -23,25 +23,22 @@ O Yu-Gi-Oh!-Base! é uma aplicação desenvolvida para fins academicos  com o in
     - Api par0a busca completa de qualquer tipo de informação sobre cards, archtypes, sets e precos. (https://db.ygoprodeck.com/api-guide/).
 
 ## Screenshots:
-
-###Tela inicial:  
-  <img src= "https://i.imgur.com/wenhhYs.jpg">  
-###Detalhes de uma carta:  
-  <img src= "https://i.imgur.com/E9DB3W6.jpg"> 
-  <img src="https://i.imgur.com/Rxjj07R.jpg">  
-###Calculadora:  
-  <img src= "https://i.imgur.com/VLq43i9.jpg">
-  <img src= "https://i.imgur.com/SET04tW.jpg">
-  <img src= "https://i.imgur.com/T9NJBIO.jpg">  
-  
-
+### Tela inicial:
+<img src= "https://i.imgur.com/wenhhYs.jpg">
+### Detalhes de uma carta:
+<img src= "https://i.imgur.com/E9DB3W6.jpg">
+<img src="https://i.imgur.com/Rxjj07R.jpg">
+### Calculadora:
+<img src= "https://i.imgur.com/VLq43i9.jpg">
+<img src= "https://i.imgur.com/SET04tW.jpg">
+<img src= "https://i.imgur.com/T9NJBIO.jpg">
 ## Como Testar:
 
 O aplicativo possui duas janelas principais:
-### Database 
+### Database:
 Comtém uma lista com todas as cartas disponiveis onde é possivel selecionar algum dos elementos da lista para exibição de uma telha de detalhes contendo todas as informações sobra o card em especifico, sua imagem, e as informações de preços em certos websites especializados.
 
-### Calculator
+### Calculator:
  Contem uma calculadora com um cabeçario que possui dois campos em destaque : pontos de vida atuais iniciados em 8000(valor em verde) e o valor a ser calculado dos pontos de vida(em vermelho), além de um botão em ambos os campos representado pela letra c para resetar seus respectivos valores.  
 Abaixo a esses campos é possivel encontrar varios botões que possuem valores inteiros em vermelho e tem a funcionalidade de acionar qualquer valor que o descreve ao valor a ser caculado dos pontos de vida (valor em vermelho).  
 Ao lado direito superior é possivel emcontrar dois botões com bordas vermelhas e valor verde com os respectivos sinais: +, - e executam o calculo do valor a ser retirado dos pontos de vida correspondendo ao seu sinal. Logo após se encontram dois botoes com as bordas verdes e valor em verde com os respectivos sinais: X2, /2 e respectivamente multiplicam por 2 e dividem por dois o valor dos pontos de vida atuais  
