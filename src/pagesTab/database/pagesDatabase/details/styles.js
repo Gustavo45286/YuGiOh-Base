@@ -22,8 +22,8 @@ export const CardImage = styled.Image`
 
 export const Detalhes = styled.View`
     border-top-width: 1px;
-    border-top-color: #ce324f; 
-    background-color: #353535;
+    border-top-color: #ce324f8e; 
+    background-color: #202020;
     height: auto;
     flex: 1;
     padding: 15px 10px;
@@ -51,26 +51,19 @@ export const MonsterDetails = styled.Text`
 
 export const PriceDetails = styled.View`
     border-top-width: 1px;
-    border-top-color: #ce324f; 
-    background-color: #353535;
+    border-top-color: #ce324f8e; 
+    background-color: #202020;
     height: auto;
-    
     padding: 20px 10px;
     border-bottom-width: 1px;
-    border-bottom-color: #ce324f; 
+    border-bottom-color: #ce324f8a; 
 `;
-
-
-
-
-
 
 export const Website = styled.View`
     background-color: #353535;
     height: auto;
     flex: 1;
     flex-direction: row;
-
     border-bottom-width: 1px;
     border-bottom-color: #ffffff8e; 
 `;
@@ -81,6 +74,7 @@ export const WebsiteName = styled.Text`
     flex: 1
     text-align: left;
     font-size: 16px;
+    background-color: #202020;
 `;
 
 export const Price = styled.Text`
@@ -88,6 +82,7 @@ export const Price = styled.Text`
     font-size: 16px;
     text-align: right;
     color: green;
+    background-color: #202020;
 `;
 
 

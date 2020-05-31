@@ -14,7 +14,7 @@ export default function CalculatorStack(){
         <NavigationContainer independent={true}>
             <Stack.Navigator
                 screenOptions={{
-                    headerTintColor: 'white',
+                    headerTintColor: '#ce324f9e',
                     headerTransparent: true,
                     title:''
                 }}

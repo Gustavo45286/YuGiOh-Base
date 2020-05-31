@@ -29,13 +29,13 @@ function AllCards ({navigation}) {
 
         setloading(true);
 
-        let limit = 20;
+        let limit = 50;
 
         const response = await ygoApi.get('?&num='+limit+'&offset='+offSet);
         
         setCards([...cards,...response.data.data]);
 
-        setOffSet(offSet+20);
+        setOffSet(offSet+50);
         setloading(false);
 
     }
@@ -59,7 +59,10 @@ function AllCards ({navigation}) {
             </Header>
             <CardDetails>
                 <CardDetailsText>
-                    Card Image                           Name                                 
+                    Artwrok                        
+                </CardDetailsText>
+                <CardDetailsText>
+                    Name                            
                 </CardDetailsText>
             </CardDetails>
             <ListaCards>
@@ -70,21 +73,12 @@ function AllCards ({navigation}) {
                     onEndReachedThreshold={0.1}
                     renderItem={
                         ({item: card}) =>(
-            
                             <TouchableHighlight  onPress={ ()=> verDetalhes(card)} onLongPress={() => verDetalhes(card)}> 
-                                <Botao>
-                                    <ButtonContainer>
-                                        <Image style={{height: 130,width: 90}} source={{uri: card.card_images[0].image_url}}></Image>
-                                        <ButtonText>{card.name}</ButtonText>
-                                    </ButtonContainer> 
-                                </Botao>  
-                                               
-                                
+                                <ButtonContainer>
+                                    <Image style={{height: 130,width: 90}} source={{uri: card.card_images[0].image_url}}></Image>
+                                    <ButtonText>{card.name}</ButtonText>
+                                </ButtonContainer> 
                             </TouchableHighlight>
-
-
-
-
                         )
                     }
                 />

@@ -1,12 +1,31 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React,{useState} from 'react';
+import { Text, View,Button } from 'react-native';
+import {useRoute, useFocusEffect} from '@react-navigation/native'
 
-function Dice () {
-                                
+import Constants from 'expo-constants';
+
+import {
+    Container,
+    DiceContainer,DiceText
+} from './styles'
+
+
+
+function Dice ({navigation}) {
+    const route = useRoute(); 
+    const [num,setNum] = useState(route.params.number);
+
+
     return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Dice!</Text>
-    </View>
+        <Container style={ {marginTop: Constants.statusBarHeight} }>
+                <DiceContainer>
+                    <DiceText>{num}</DiceText>
+                </DiceContainer>
+                
+
+                <Button title={"Dice Again!"} color={'#ce324f'}onPress={ () => setNum((Math.floor(Math.random() * 6)+1))}></Button>
+        </Container>
+    
     );
 }
 

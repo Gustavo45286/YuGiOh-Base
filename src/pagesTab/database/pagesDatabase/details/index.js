@@ -5,14 +5,6 @@ import {Container,Detalhes,Imagem,CardImage,Name,Effect,Type,PriceDetails,Websit
 import Constants from 'expo-constants';
 
 import RenderMonster from './renderMonster';
-/*
-    useFocusEffect(
-        React.useCallback(()=> {
-            loadCards();
-        },[])
-    )
-
-*/
 const Details = ()=> {
     const route = useRoute();
     const card = route.params.card;
@@ -54,8 +46,6 @@ const Details = ()=> {
         },[])
     )
 
-    
-
     return(
         <Container style={ {marginTop: Constants.statusBarHeight} } >
             <Imagem>
@@ -92,8 +82,6 @@ const Details = ()=> {
                     <WebsiteName>TCG Player</WebsiteName>
                     <Price>{cardPrices.tcgplayer_price}$</Price>
                 </Website>
-                
-                
             </PriceDetails>
 
         </Container>
