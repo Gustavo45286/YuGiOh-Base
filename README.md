@@ -25,7 +25,7 @@ O Yu-Gi-Oh!-Base! é uma aplicação desenvolvida para fins academicos  com o in
 ## Screenshots:
 
 Tela inicial:  
-  https://i.imgur.com/wenhhYs.jpg  
+  <img src= "https://i.imgur.com/wenhhYs.jpg"> 
 Detalhes de uma carta:  
   https://i.imgur.com/E9DB3W6.jpg  
   https://i.imgur.com/Rxjj07R.jpg  
