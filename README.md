@@ -37,9 +37,7 @@ Calculadora;
 
 ## Como Testar:
 
-O aplicativo possui duas janelas principais 
-  - Database
-  - Caculator
+O aplicativo possui duas janelas principais:
 ### Database 
 Comtém uma lista com todas as cartas disponiveis onde é possivel selecionar algum dos elementos da lista para exibição de uma telha de detalhes contendo todas as informações sobra o card em especifico, sua imagem, e as informações de preços em certos websites especializados.
 
