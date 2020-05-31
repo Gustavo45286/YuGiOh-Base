@@ -18,21 +18,21 @@ O Yu-Gi-Oh!-Base! é uma aplicação desenvolvida para fins academicos  com o in
   - Estilização dos components do react atravez de ES6 e CSS (https://styled-components.com/).
 - APIs
   - Axios
-    - Cliente para requisições em promisse da API(https://github.com/axios/axios).
+    - Cliente para requisições em promisse da API.(https://github.com/axios/axios).
   - YGOPRODeck
-    - Api par0a busca completa de qualquer tipo de informação sobre cards, archtypes, sets e precos (https://db.ygoprodeck.com/api-guide/).
+    - Api par0a busca completa de qualquer tipo de informação sobre cards, archtypes, sets e precos. (https://db.ygoprodeck.com/api-guide/).
 
 ## Screenshots:
 
-Tela inicial:
-  https://i.imgur.com/wenhhYs.jpg
-Detalhes de uma carta:
-  https://i.imgur.com/E9DB3W6.jpg
-  https://i.imgur.com/Rxjj07R.jpg
-Calculadora;
-  https://i.imgur.com/VLq43i9.jpg
-  https://i.imgur.com/SET04tW.jpg
-  https://i.imgur.com/T9NJBIO.jpg
+Tela inicial:  
+  https://i.imgur.com/wenhhYs.jpg  
+Detalhes de uma carta:  
+  https://i.imgur.com/E9DB3W6.jpg  
+  https://i.imgur.com/Rxjj07R.jpg  
+Calculadora:  
+  https://i.imgur.com/VLq43i9.jpg  
+  https://i.imgur.com/SET04tW.jpg  
+  https://i.imgur.com/T9NJBIO.jpg  
   
 
 ## Como Testar:
